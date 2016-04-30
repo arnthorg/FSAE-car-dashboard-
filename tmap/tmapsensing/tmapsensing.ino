@@ -46,10 +46,10 @@ void loop(void)
   while (Serial.available() == 0);
   val = Serial.read();
    if (val == 'T') {
-     Serial.println(getTemp(0));
+     Serial.println(getTemp(0), 5);
    } 
    if (val == 'V') {
-    Serial.println(analogRead(A0)*5.0/1024.0);
+    Serial.println(analogRead(A0)*5.0/1024.0, 5);
    }
       count++;
     if(count > 2^16) {
