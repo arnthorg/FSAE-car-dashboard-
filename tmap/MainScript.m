@@ -38,7 +38,7 @@ if(~exist('myAxes','var'))
     zeroIndex = zeros(size(index)); 
     tcdata = zeroIndex;
     vcdata = zeroIndex;
-    limits = [-15 10];
+    limits = [-20 13];
     
     myAxes = axes('Xlim',[0 buf_len],'Ylim',limits);
     grid on;
@@ -65,6 +65,7 @@ while (get(button,'Value') == 0 )
     set(l2,'Ydata',vcdata);
     
     drawnow;
+    sprintf('%f , %f',vc, tc)
 
     pause(1);
 end
