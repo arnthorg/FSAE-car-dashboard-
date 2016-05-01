@@ -1,6 +1,8 @@
 format short
 format compact
- %%
+ %% 
+% kóði sem að býr til 256 punkta úr ferli til 
+% að geta sett inn í lookuptöflu
 
 % %% óþarfi, tek SMA í staðinn.
 % % load tempvolt_110-neg2C-TMAP.mat;
@@ -18,9 +20,14 @@ format compact
 % end
 
 %% sma 
-output = tsmovavg(tempvolt,'e',3,1);
-
+weight = 4;
+output = tsmovavg(tempvolt,'e',weight,1);
+for i = 1:(weight-1)
+    output(1,:) = [];
+end
+hold on
 plot(output(:,1), output(:,2))
+plot(tempvolt(:,1), tempvolt(:,2))
 %%
 vq = interp1(output(:,1),output(:,2), 0:5/256:5-5/256);
 hold on
