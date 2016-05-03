@@ -38,9 +38,16 @@ newq = round(vq);
 strengur = '';
 for i = 1:length(newq)
     if isnan(newq(i))
-        strengur = strcat(strengur, ', ', '0');
+        strengur = strcat(strengur, ',   0');
     else
-        strengur = strcat(strengur, ', ', num2str(newq(i)));
+%         strengur = strcat(strengur, ',', num2str(newq(i)));
+        if newq(i) > 99
+            strengur = strcat(strengur, sprintf(', %d', newq(i)));
+        elseif (newq(i) >9) | (newq(i) <0)
+            strengur = strcat(strengur, sprintf(',  %d', newq(i)));
+        end
+
+
     end
 end
 disp(strengur)
