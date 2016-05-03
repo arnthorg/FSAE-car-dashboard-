@@ -50,12 +50,13 @@ uint8_t fluidTempRef(uint8_t value) {
 }
 uint8_t oilPressureRef(uint8_t value) {
 	// It's wise to switch to the internal 1.1 V ref
-	// since the resistance of the sender is very low
+	// since the resistance of the sender is very low (1-160ohm)
 	// and will only output 0-500mV between 0 and 6.5Bar
+	// when using a 1k resistor.
 	return (0.0802 * value + 0.0062);
 }
 uint8_t manifoldPressureRef(uint8_t value) {
-	return 0.0438*value + 0.0991;
+	return (0.0438 * value + 0.0991);
 }
 
 
