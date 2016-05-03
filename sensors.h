@@ -34,6 +34,7 @@ return lookup[value];
 }
 uint8_t fluidTempRef(uint8_t value) {
   static const  uint8_t lookup[256] = {
+	  // remember to subtract 30 for the correct value
 	   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,
 	 179, 175, 172, 169, 166, 163, 161, 159, 157, 155, 153, 151,
 	 149, 148, 146, 144, 143, 142, 140, 139, 138, 136, 135, 134,
