@@ -1,5 +1,5 @@
-const byte ledPin = 13;
 const byte interruptPin = 2;
+const short BAR_SIZE = 16;
 volatile byte state = LOW;
 unsigned long lastInterrupt;
 unsigned long currentInterrupt;
@@ -8,6 +8,8 @@ float deltaT;
 unsigned short pos =0;
 double rpm[10] = {0};
 double sum;
+bool barGraphArr[BAR_SIZE] = {0};
+
 
 
 void setup() {
@@ -45,5 +47,15 @@ void calculateRpm() {
   rpm[pos] = deltaT;
   pos++;
   if(pos >9) pos = 0;
+}
+void num2array(double rpm) {
+  // I want a range from 0-6000RPM divided into 16
+  int range = 6000/16;
+  for( int iter = 0; iter < BAR_SIZE; iter++) {
+    if(rpm > range * iter) {
+      barGraphArr[iter] = 1;
+    }
+    else barGraphArr[iter] = 0;
+  }
 }
 
