@@ -1,5 +1,6 @@
 #define Data 3 // D3
 #define CP 4 //   D4
+const unsigned short MAX_RPM = 9100;
 const byte interruptPin = 2;
 const short BAR_SIZE = 10;
 volatile byte state = LOW;
@@ -40,9 +41,13 @@ void loop() {
 void barGraph(int rpm) {
   num2array(rpm);
   for(int iter = 0; iter < BAR_SIZE; iter++ ) {
-    digitalWrite(Data, barGraphArr[BAR_SIZE - iter - 1]); // inverting the output
+    /*digitalWrite(Data, barGraphArr[BAR_SIZE - iter - 1]); // inverting the output
     digitalWrite(CP, 1);
-    digitalWrite(CP, 0);
+    digitalWrite(CP, 0);*/
+    bool x = barGraphArr[BAR_SIZE - iter - 1];
+    PORTD ^= (-x ^ PORTD) & (1 << 3);
+    PORTD |= (1<<4);
+    PORTD &= ~(1<<4);
   }
 }
 void calcRpmAvg() {
@@ -70,8 +75,7 @@ void calculateRpm() {
   if(pos >9) pos = 0;
 }
 void num2array(double rpm) {
-  // I want a range from 0-6000RPM divided into 16
-  int range = 6000/BAR_SIZE;
+  int range = MAX_RPM/BAR_SIZE;
   for( int iter = 0; iter < BAR_SIZE; iter++) {
     if(rpm > range * iter) {
       barGraphArr[iter] = 1;
