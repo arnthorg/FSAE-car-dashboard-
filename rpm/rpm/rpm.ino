@@ -1,12 +1,11 @@
-#define Data 3 // D3
-#define CP 4 //   D4
-#define Data7 5 //D5
-#define CP7 6 
-#define Latch7 7
+#define Data 4 // D3
+#define CP 5 //   D4
+#define Data7 6 //D5
+#define CP7 7 
+#define Latch7 8
 const unsigned short MAX_RPM = 9100;
 const byte interruptPin = 2;
 const short BAR_SIZE = 10;
-volatile byte state = LOW;
 unsigned long lastInterrupt;
 unsigned long currentInterrupt;
 float deltaT;
@@ -32,17 +31,17 @@ void setup() {
   pinMode(Data7, OUTPUT); 
   pinMode(Latch7, OUTPUT); 
   digitalWrite(Latch7, 0);
-  PORTD &= ~((1<<5) | (1<<6) | (1<<7)); // unsetting bits 5-7
+  //PORTD &= ~((1<<5) | (1<<6) | (1<<7)); // unsetting bits 5-7
   delay(100);
   attachInterrupt(digitalPinToInterrupt(interruptPin), blink, RISING);
 }
 
 void loop() {
   calcRpmAvg();
-  /*Serial.print("rpm: ");
+  Serial.print("rpm: ");
   Serial.println(rpmAvg);
   barGraph(rpmAvg);
-  Serial.println("");*/
+  Serial.println("");
   for(int iter = 0;iter<8;iter++) {
     sevenSeg(iter);
     //shiftOut(Data7, CP7, MSBFIRST, 1<<iter);
@@ -55,9 +54,9 @@ void barGraph(int rpm) {
   num2array(rpm);
   for(int iter = 0; iter < BAR_SIZE; iter++ ) {
     bool x = barGraphArr[BAR_SIZE - iter - 1];
-    PORTD ^= (-x ^ PORTD) & (1 << 3); 
-    PORTD |= (1<<4);
-    PORTD &= ~(1<<4);
+    PORTD ^= (-x ^ PORTD) & (1 << Data); 
+    PORTD |= (1<<CP);
+    PORTD &= ~(1<<CP);
   }
 }
 void calcRpmAvg() {
@@ -99,8 +98,8 @@ void sevenSeg(short symbol) {
   shiftOut(Data7, CP7, LSBFIRST, ~digitTmp);
   //digitalWrite(Latch7, 1);
   //digitalWrite(Latch7, 0);
-  PORTD |= (1<<7);
+  PORTD |= (1<<Latch7);
   delayMicroseconds(5); //datasheet segir 200ns min en þarf alveg 5µs t_w
-  PORTD &= ~(1<<7);
+  PORTD &= ~(1<<Latch7);
 }
 
