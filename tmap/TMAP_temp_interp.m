@@ -1,18 +1,19 @@
 format short
 format compact
+warning('off','all');
  %% 
-% kóði sem að býr til 256 punkta úr ferli til 
-% að geta sett inn í lookuptöflu
+% kï¿½ï¿½i sem aï¿½ bï¿½r til 256 punkta ï¿½r ferli til 
+% aï¿½ geta sett inn ï¿½ lookuptï¿½flu
 
-% %% óþarfi, tek SMA í staðinn.
+% %% ï¿½ï¿½arfi, tek SMA ï¿½ staï¿½inn.
 % % load tempvolt_110-neg2C-TMAP.mat;
-% % Taka út duplicate X gildi svo interp1 verði glatt
+% % Taka ï¿½t duplicate X gildi svo interp1 verï¿½i glatt
 % for i = 1:(length(tempvolt(:,1)-3)) 
 %     if tempvolt(i,1) == tempvolt(i+1,1)
 %         tempvolt(i,:) = [];
 %     end
 % end
-%  taka út gildi ef volts hækka 
+%  taka ï¿½t gildi ef volts hï¿½kka 
 % for i = 1:(length(tempvolt(:,1)-3)) 
 %     if tempvolt(i,1) > tempvolt(i+1,1)
 %         tempvolt(i,:) = [];
@@ -21,7 +22,11 @@ format compact
 
 %% sma 
 weight = 4;
-output = tsmovavg(tempvolt,'e',weight,1);
+%output = tsmovavg(tempvolt,'e',weight,1);
+%octave hax
+pkg load image
+output = imfilter(tempvolt, fspecial('average', [1 1]));
+%end
 for i = 1:(weight-1)
     output(1,:) = [];
 end
@@ -36,18 +41,24 @@ plot(output(:,1),output(:,2), 'o')
 newq = round(vq);
 %%
 strengur = '';
+datacol = cell(16,1);
+line = 1;
 for i = 1:length(newq)
     if isnan(newq(i))
-        strengur = strcat(strengur, ',   0');
-    else
+        strengur = strcat(strengur, '   0,');
+    
 %         strengur = strcat(strengur, ',', num2str(newq(i)));
-        if newq(i) > 99
-            strengur = strcat(strengur, sprintf(', %d', newq(i)));
+        elseif newq(i) > 99
+            strengur = strcat(strengur, sprintf(' %d,', newq(i)));
         elseif (newq(i) >9) | (newq(i) <0)
-            strengur = strcat(strengur, sprintf(',  %d', newq(i)));
+            strengur = strcat(strengur, sprintf('  %d,', newq(i)));
+        else
+            strengur = strcat(strengur, sprintf('   %d,', newq(i)));
         end
-
-
+    if mod(i, 16) == 0
+      disp(strengur)
+      strengur = '';
     end
+    
 end
-disp(strengur)
+% disp(strengur)

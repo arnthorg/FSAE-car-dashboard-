@@ -20,9 +20,12 @@ for i = 1:length(newq)
             strengur = strcat(strengur, sprintf(', %d', newq(i)));
         elseif (newq(i) >9) | (newq(i) <0)
             strengur = strcat(strengur, sprintf(',  %d', newq(i)));
+        else
+            strengur = strcat(strengur, sprintf(',   %d', newq(i)));
         end
-
-
+    if mod(i, 16) == 0
+      strengur = strcat(strengur, '\n');
+    end
     end
 end
 disp(strengur)
