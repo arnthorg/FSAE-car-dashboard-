@@ -1,4 +1,6 @@
 #include "stdbool.h"
+#include <avr/wdt.h> // watchdog
+#include <EEPROM.h> 
 #define interruptPin2 2
 #define interruptPin3 3
 #define Data 4 // D4
@@ -10,6 +12,7 @@
 #define gearDown 10
 #define neutral 11 
 #define oilP A0
+ 
 
 const unsigned short MAX_RPM = 9100;
 const short BAR_SIZE = 10;
@@ -53,23 +56,14 @@ void setup() {
 // watchdog timer
 // skjár
 // lesa frá mælum
-/*static volatile int shared_variable ; // er að reyna að fækka global breytum
-
-int getShared(){ return shared_variable ; }
-
-static void isr_handler()
-{
-shared_variable++ ;
-}*/
 void loop() {
+	
 	barGraph(calcRpmAvg());
 	//sevenSeg(g_selectedGear); // refresh display periodically
 	//Serial.println(g_selectedGear);
-
-	//delay(500);
 }
 void setGear() { //int 1
-	if (PINB & (1 << (neutral - 8))) {          // untested
+	if (PINB & (1 << (neutral - 8))) {          // 
 		g_selectedGear = 1;						//1 being neutral
 		return;
 	}
