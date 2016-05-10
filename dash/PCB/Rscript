@@ -1,0 +1,9 @@
+from pcbnew import *
+i = 1
+m = GetBoard().m_Modules
+x,y=0,0
+while m: 
+    if m.getReference and m.getReference()[0] == 'R':
+        m.SetPosition(wxPoint(x+i*2.54,y))
+        i+=1
+    m = m.Next()
