@@ -1,4 +1,4 @@
-update=5.5.2016 21:49:11
+update=9.5.2016 23:32:22
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../PCB;C:/Users/arnth/Dropbox/HVR2-2016/dash/PCB
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -60,3 +60,17 @@ LibName28=contrib
 LibName29=valves
 LibName30=w_logic
 LibName31=ch340-usb-serial-isolated-cache
+LibName32=Cer_reso
+LibName33=pin_header
+LibName34=arduino
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+ERC_TestSimilarLabels=1

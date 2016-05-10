@@ -2,7 +2,7 @@
 
   (general
     (links 130)
-    (no_connects 116)
+    (no_connects 100)
     (area 0 0 0 0)
     (thickness 1.6)
     (drawings 0)
@@ -375,7 +375,7 @@
   )
 
   (module SMD_Packages:Ceramic_Filter (layer F.Cu) (tedit 0) (tstamp 573130AC)
-    (at 8.89 -5.08)
+    (at 0 0)
     (descr "Ceramic filter")
     (tags "ceramic filter")
     (path /57318C40)
@@ -403,7 +403,7 @@
   )
 
   (module SMD_Packages:Ceramic_Filter (layer F.Cu) (tedit 0) (tstamp 573130D7)
-    (at 8.89 1.27)
+    (at 0 0)
     (descr "Ceramic filter")
     (tags "ceramic filter")
     (path /573199C4)
@@ -431,7 +431,7 @@
   )
 
   (module Resistors_SMD:R_0805_HandSoldering (layer F.Cu) (tedit 54189DEE) (tstamp 573130FF)
-    (at -1.27 -5.08)
+    (at 0 0)
     (descr "Resistor SMD 0805, hand soldering")
     (tags "resistor 0805")
     (path /57325C17)
@@ -1011,7 +1011,7 @@
   )
 
   (module Resistors_SMD:R_0805_HandSoldering (layer F.Cu) (tedit 54189DEE) (tstamp 5731342B)
-    (at -1.27 8.89)
+    (at 0 0)
     (descr "Resistor SMD 0805, hand soldering")
     (tags "resistor 0805")
     (path /57300858)
@@ -1649,7 +1649,7 @@
   )
 
   (module Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm (layer F.Cu) (tedit 54130A77) (tstamp 57313797)
-    (at 13.97 -17.78)
+    (at 0 0)
     (descr "32-Lead Plastic Thin Quad Flatpack (PT) - 7x7x1.0 mm Body, 2.00 mm [TQFP] (see Microchip Packaging Specification 00000049BS.pdf)")
     (tags "QFP 0.8")
     (path /572B9A8A)
@@ -1952,7 +1952,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313943)
-    (at -15.24 10.16)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /57368CB9)
@@ -1996,7 +1996,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313986)
-    (at -15.24 33.02)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /572C7C85)
@@ -2040,7 +2040,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 573139C9)
-    (at -1.27 38.1)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /5733D89F)
@@ -2084,7 +2084,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313A0C)
-    (at -1.27 30.48)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /57311203)
@@ -2128,7 +2128,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313A4F)
-    (at -15.24 5.08)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /572C7609)
@@ -2172,7 +2172,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313A92)
-    (at 0 24.13)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /5736A6F9)
@@ -2216,7 +2216,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313AD5)
-    (at -15.24 16.51)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /572F4538)
@@ -2260,7 +2260,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313B18)
-    (at -3.81 44.45)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /572F45F5)
@@ -2304,7 +2304,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313B5B)
-    (at -15.24 0)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /573257D0)
@@ -2348,7 +2348,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313B9E)
-    (at -3.81 50.8)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /57323F78)
@@ -2392,7 +2392,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57313BE1)
-    (at -15.24 22.86)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /5736A8AF)
@@ -2436,7 +2436,7 @@
   )
 
   (module Capacitors_SMD:C_0805_HandSoldering (layer F.Cu) (tedit 541A9B8D) (tstamp 57313C19)
-    (at -1.27 -8.89)
+    (at 0 0)
     (descr "Capacitor SMD 0805, hand soldering")
     (tags "capacitor 0805")
     (path /572C8432)
@@ -2465,7 +2465,7 @@
   )
 
   (module Capacitors_SMD:C_0805_HandSoldering (layer F.Cu) (tedit 541A9B8D) (tstamp 57313C3B)
-    (at 0 5.08)
+    (at 0 0)
     (descr "Capacitor SMD 0805, hand soldering")
     (tags "capacitor 0805")
     (path /57350B71)
@@ -2494,7 +2494,7 @@
   )
 
   (module Capacitors_SMD:C_0805_HandSoldering (layer F.Cu) (tedit 541A9B8D) (tstamp 57313C5D)
-    (at -1.27 -2.54)
+    (at 0 0)
     (descr "Capacitor SMD 0805, hand soldering")
     (tags "capacitor 0805")
     (path /57350CC5)
@@ -2523,7 +2523,7 @@
   )
 
   (module Capacitors_SMD:C_0805_HandSoldering (layer F.Cu) (tedit 541A9B8D) (tstamp 57313C7F)
-    (at -1.27 2.54)
+    (at 0 0)
     (descr "Capacitor SMD 0805, hand soldering")
     (tags "capacitor 0805")
     (path /572C261A)
@@ -2755,7 +2755,7 @@
   )
 
   (module TO_SOT_Packages_THT:TO-220_Neutral123_Horizontal (layer F.Cu) (tedit 0) (tstamp 57315DA9)
-    (at -19.05 -3.81)
+    (at 0 0)
     (descr "TO-220, Neutral, Horizontal,")
     (tags "TO-220, Neutral, Horizontal,")
     (path /572B9139)
@@ -3028,7 +3028,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 5731644A)
-    (at -15.24 27.94)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /572FCE09)
@@ -3072,7 +3072,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 57316569)
-    (at -16.51 50.8)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /572F466B)
@@ -3116,7 +3116,7 @@
   )
 
   (module Diodes_SMD:MELF_Handsoldering (layer F.Cu) (tedit 552FE6B7) (tstamp 573165AC)
-    (at -16.51 40.64)
+    (at 0 0)
     (descr "Diode MELF Handsoldering")
     (tags "Diode MELF Handsoldering")
     (path /5730219D)
