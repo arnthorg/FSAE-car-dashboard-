@@ -709,17 +709,6 @@ $EndComp
 Text Label 10300 3200 2    60   ~ 0
 Vcc
 $Comp
-L LTS-6980HR AFF1
-U 1 1 572FFC5A
-P 2800 7000
-F 0 "AFF1" H 2800 7550 50  0000 C CNN
-F 1 "LTS-6980HR" H 2800 6550 50  0000 C CNN
-F 2 "addlol:7seg" H 2800 7000 50  0001 C CNN
-F 3 "" H 2800 7000 50  0000 C CNN
-	1    2800 7000
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R37
 U 1 1 57300395
 P 2050 6600
@@ -806,17 +795,6 @@ F 2 "Resistors_SMD:R_0805_HandSoldering" V 1980 7300 50  0001 C CNN
 F 3 "" H 2050 7300 50  0000 C CNN
 	1    2050 7300
 	0    1    1    0   
-$EndComp
-$Comp
-L GNDREF #PWR37
-U 1 1 57300AE0
-P 3400 6650
-F 0 "#PWR37" H 3400 6400 50  0001 C CNN
-F 1 "GNDREF" H 3400 6500 50  0000 C CNN
-F 2 "" H 3400 6650 50  0000 C CNN
-F 3 "" H 3400 6650 50  0000 C CNN
-	1    3400 6650
-	1    0    0    -1  
 $EndComp
 Text Label 1100 6700 2    60   ~ 0
 D7
@@ -2526,13 +2504,13 @@ F 3 "" H 13750 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 12850 4900 2    60   ~ 0
-12Vraw
+12vraw
 Text Label 13350 4900 0    60   ~ 0
-12Vraw
+12vraw
 Text Label 13800 4900 2    60   ~ 0
-12Vraw
+12vraw
 Text Label 14300 4900 0    60   ~ 0
-12Vraw
+12vraw
 Text Label 5200 6850 3    60   ~ 0
 intShiftLight
 Text Label 5200 7700 2    60   ~ 0
@@ -2545,4 +2523,17 @@ Text Label 13350 5000 0    60   ~ 0
 intShiftLight
 Text Label 14300 5000 0    60   ~ 0
 intShiftLight
+$Comp
+L 7SEGMENTS AFF?
+U 1 1 5736B60E
+P 2800 7000
+F 0 "AFF?" H 2800 7675 50  0000 C CNN
+F 1 "7SEGMENTS" H 2800 7584 50  0000 C CNN
+F 2 "" H 2800 7000 50  0000 C CNN
+F 3 "" H 2800 7000 50  0000 C CNN
+	1    2800 7000
+	1    0    0    -1  
+$EndComp
+Text Label 3400 6550 0    60   ~ 0
+Vcc
 $EndSCHEMATC

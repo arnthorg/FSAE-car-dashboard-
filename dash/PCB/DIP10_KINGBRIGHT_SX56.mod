@@ -1,0 +1,114 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+DIP10_KINGBRIGHT_SX56
+$EndINDEX
+$MODULE DIP10_KINGBRIGHT_SX56
+Po 0 0 0 15 00000000 00000000 ~~
+Li DIP10_KINGBRIGHT_SX56
+Cd <b>Dual-In-Line 10 pin, through hole package, for Kingbright S[AC]56</b><br><p>This is a package footprint for Kingbright S[AC]56 single-digit 7-segment LED displays</p>
+Sc 00000000
+At STD
+Op 0 0 0
+.SolderMask 0.1
+.SolderPaste 0
+T0 -4.445 2.54 1 1 900 0.05 N V 21 "DIP10_KINGBRIGHT_SX56"
+T1 4.445 -0.635 1 1 900 0.05 N V 21 "VAL**"
+DS -6.35 -9.525 6.35 -9.525 0.127 24
+DS 6.35 -9.525 6.35 9.525 0.127 24
+DS 6.35 9.525 -6.35 9.525 0.127 24
+DS -6.35 9.525 -6.35 -9.525 0.127 24
+DS -6.35 6.35 -3.81 6.35 0.254 21
+DS -3.81 6.35 -3.81 7.62 0.254 21
+DS -6.35 7.62 -6.35 -7.62 0.254 21
+DS 6.35 -7.62 6.35 7.62 0.254 21
+DS -1.27 -5.08 1.27 -5.08 1.016 21
+DS -1.27 0 1.27 0 1.016 21
+DS -1.27 5.08 1.27 5.08 1.016 21
+DS -2.54 -3.81 -2.54 -1.27 1.016 21
+DS -2.54 1.27 -2.54 3.81 1.016 21
+DS 2.54 -3.81 2.54 -1.27 1.016 21
+DS 2.54 1.27 2.54 3.81 1.016 21
+DC 3.81 5.08 4.318 5.08 1.016 21
+$PAD
+Sh "1" R 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po -5.08 7.62
+$EndPAD
+$PAD
+Sh "2" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po -2.54 7.62
+$EndPAD
+$PAD
+Sh "3" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po 0 7.62
+$EndPAD
+$PAD
+Sh "4" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po 2.54 7.62
+$EndPAD
+$PAD
+Sh "5" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po 5.08 7.62
+$EndPAD
+$PAD
+Sh "6" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po 5.08 -7.62
+$EndPAD
+$PAD
+Sh "7" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po 2.54 -7.62
+$EndPAD
+$PAD
+Sh "8" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po 0 -7.62
+$EndPAD
+$PAD
+Sh "9" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po -2.54 -7.62
+$EndPAD
+$PAD
+Sh "10" C 1.308 1.308 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+.SolderMask 0.2
+Ne 0 ""
+Po -5.08 -7.62
+$EndPAD
+$EndMODULE DIP10_KINGBRIGHT_SX56

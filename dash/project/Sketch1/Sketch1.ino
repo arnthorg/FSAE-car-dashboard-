@@ -16,7 +16,7 @@
 
 const unsigned short MAX_RPM = 9100;
 const short BAR_SIZE = 10;
-const byte digit[8] = { B00001010, B00101010, B01100000,        //r,n,1,2,3,4,5,E
+const byte digit[8] = { B00001010, B01100000, B00101010,         //r,1,n,2,3,4,5,E
 						B11011010, B11110010, B01100110,
 						B10110110, B10011110 };
 
@@ -48,7 +48,7 @@ void setup() {
 	attachInterrupt(digitalPinToInterrupt(interruptPin3), setGear, RISING);
 	if (!(PINB & (1 << neutral - 8))) sevenSeg(7); //display E on 7seg
 	else {
-		g_selectedGear = 1; // 1 being neutral
+		g_selectedGear = 2; // 1 being neutral
 		sevenSeg(1);
 	}
 }
@@ -64,18 +64,18 @@ void loop() {
 }
 void setGear() { //int 1
 	if (PINB & (1 << (neutral - 8))) {          // 
-		g_selectedGear = 1;						//1 being neutral
+		g_selectedGear = 2;						//2 being neutral
 		return;
 	}
 	bool gearUpState = (PINB & (1 << (gearUp - 8)));
 	bool gearDownState = (PINB & (1 << (gearDown - 8)));
 	unsigned long currentInterrupt = micros();
-	if ((currentInterrupt - g_lastInterrupt2) > 2.5e5) { //debounce 250ms
+	if ((currentInterrupt - g_lastInterrupt2) > 1.5e5) { //debounce 150ms
 		//if ((PINB & (1 << neutral - 8)) && g_selectedGear >6) g_selectedGear = 1; 
 		if (gearUpState && g_selectedGear < 6) {
 			g_selectedGear++;
 		}
-		else if (gearDownState && g_selectedGear > 0) {
+		else if (gearDownState && g_selectedGear > 1) {
 			g_selectedGear--;
 		}
 		sevenSeg(g_selectedGear);
