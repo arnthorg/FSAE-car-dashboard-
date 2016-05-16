@@ -1,4 +1,4 @@
-update=9.5.2016 23:32:22
+update=12.5.2016 17:47:14
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,17 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=../PCB;C:/Users/arnth/Dropbox/HVR2-2016/dash/PCB
@@ -63,14 +74,4 @@ LibName31=ch340-usb-serial-isolated-cache
 LibName32=Cer_reso
 LibName33=pin_header
 LibName34=arduino
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
-ERC_TestSimilarLabels=1
+LibName35=crystal_smd
