@@ -38,22 +38,23 @@ void setup() {
 
   Serial.begin(9600);
   pinMode(interruptPin2, INPUT);
-  pinMode(interruptPin3, INPUT); //external pulldown
-  pinMode(neutral, INPUT_PULLUP); //external pulldown
+  pinMode(interruptPin3, INPUT); 
+  pinMode(neutral, INPUT_PULLUP); 
   pinMode(Data, OUTPUT);
   pinMode(CP, OUTPUT);
   pinMode(CP7, OUTPUT);
   pinMode(Data7, OUTPUT);
   pinMode(Latch7, OUTPUT);
-  pinMode(gearUp, INPUT);
-  pinMode(gearDown, INPUT);
+  pinMode(shiftLight, OUTPUT);
+  pinMode(gearUp, INPUT_PULLUP);
+  pinMode(gearDown, INPUT_PULLUP);
   //PORTD &= ~((1 << Data7) | (1 << CP7) | (1 << Latch7)); // unsetting bits, dno if needed
   PORTD = 0;
   PORTB = 0;
   delay(100); //maybe this delay is important?
   attachInterrupt(digitalPinToInterrupt(interruptPin2), blink, RISING);
-  attachInterrupt(digitalPinToInterrupt(interruptPin3), setGear, RISING);
-  if (!(PINB & (1 << neutral - 8))) sevenSeg(7); //display E on 7seg
+  attachInterrupt(digitalPinToInterrupt(interruptPin3), setGear, FALLING);
+  if ((PINB & (1 << neutral - 8))) sevenSeg(7); //display E on 7seg if n is high
   else {
     g_selectedGear = 2; // 2 being neutral
     sevenSeg(1);
@@ -64,18 +65,22 @@ void setup() {
 // skjár
 // lesa frá mælum
 void loop() {
-
+  digitalWrite(shiftLight, 1);
   //barGraph(calcRpmAvg());
 
   for (int iter = 2; iter < 7; iter++) {
     sevenSeg(iter);
+    
     delay(500);
     for (int iter = 600; iter < 9100; iter++) {
       barGraph(iter);
       delay(0.1);
-
+      
+      
     }
-
+    //
+  Serial.println("lol");
+  
   }
   /*for(int iter = 0; iter <7; iter++) {
     sevenSeg(iter);
@@ -88,7 +93,7 @@ void loop() {
 }
 void setGear() { //int 1
   Serial.println("gearchange");
-  if (PINB & (1 << (neutral - 8))) {          //
+  if (!(PINB & (1 << (neutral - 8)))) {          //
     g_selectedGear = 2;           //2 being neutral
     return;
   }
@@ -97,10 +102,10 @@ void setGear() { //int 1
   unsigned long currentInterrupt = micros();
   if ((currentInterrupt - g_lastInterrupt2) > 1.5e5) { //debounce 150ms
     //if ((PINB & (1 << neutral - 8)) && g_selectedGear >6) g_selectedGear = 1;
-    if (gearUpState && g_selectedGear < 6) {
+    if (!gearUpState && g_selectedGear < 6) {
       g_selectedGear++;
     }
-    else if (gearDownState && g_selectedGear > 1) {
+    else if (!gearDownState && g_selectedGear > 1) {
       g_selectedGear--;
     }
     sevenSeg(g_selectedGear);
