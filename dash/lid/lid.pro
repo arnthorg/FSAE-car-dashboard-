@@ -1,4 +1,4 @@
-update=21.5.2016 21:52:32
+update=18.5.2016 18:05:29
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,11 +23,9 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
-LibDir=../PCB;C:/Users/arnth/Dropbox/HVR2-2016/dash/PCB
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,20 +56,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=w_logic
-LibName31=ch340-usb-serial-isolated-cache
-LibName32=Cer_reso
-LibName33=pin_header
-LibName34=arduino
-LibName35=crystal_smd
-[schematic_editor]
+[general]
 version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
-ERC_TestSimilarLabels=1

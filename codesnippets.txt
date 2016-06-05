@@ -1,0 +1,33 @@
+//sevenSeg(g_selectedGear); // refresh display periodically
+  //Serial.println(g_selectedGear);
+  /*for(int iter = 0; iter < 8; iter++) {
+    sevenSeg(iter);
+    Serial.println(iter);
+    delay(2000);
+  }*/
+  shiftOut(Data7, CP7, LSBFIRST, 0xFF);
+  delay(500);
+  shiftOut(Data7, CP7, LSBFIRST, 0x00);
+  delay(500);
+  
+  Serial.println("beginning");
+  delay(1000);
+  for(int iter = 0; iter < 8; iter++) {
+    shiftOut(Data7, CP7, MSBFIRST, ~(1<<iter));
+    delay(1000);
+  }
+  /*for(int iter = 0; iter <8; iter++) {
+    for(int iter2 = 0; iter2 <8;iter2++) { 
+      bool biti = digit[iter] & (1<<(iter2));
+      biti = !biti;
+      PORTD ^= (-biti ^ PORTD) & (1 << Data7);
+      //PORTD ^= (-(1<<iter2) ^ digitTmp) & 1;
+      delay(1);
+      PORTD |=  (1 << CP7);
+      delay(1);
+      PORTD &= ~(1 << CP7);
+    }
+    delay(1000);
+    Serial.println("trigger");
+  }*/
+  
