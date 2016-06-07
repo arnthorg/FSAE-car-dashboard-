@@ -48,6 +48,9 @@ void setup() {
   pinMode(shiftLight, OUTPUT);
   pinMode(gearUp, INPUT_PULLUP);
   pinMode(gearDown, INPUT_PULLUP);
+  digitalWrite(gearUp, 1);
+  digitalWrite(gearDown, 1);
+  digitalWrite(neutral, 1);
   //PORTD &= ~((1 << Data7) | (1 << CP7) | (1 << Latch7)); // unsetting bits, dno if needed
   PORTD = 0;
   PORTB = 0;
@@ -65,10 +68,10 @@ void setup() {
 // skjár
 // lesa frá mælum
 void loop() {
-  digitalWrite(shiftLight, 1);
-  //barGraph(calcRpmAvg());
+  //digitalWrite(shiftLight, 1);
+  barGraph(calcRpmAvg());
 
-  for (int iter = 2; iter < 7; iter++) {
+  /*for (int iter = 2; iter < 7; iter++) {
     sevenSeg(iter);
     
     delay(500);
@@ -81,7 +84,7 @@ void loop() {
     //
   Serial.println("lol");
   
-  }
+  }*/
   /*for(int iter = 0; iter <7; iter++) {
     sevenSeg(iter);
     Serial.print(iter);
@@ -89,24 +92,29 @@ void loop() {
     delay(1000);
     }*/
   //Serial.println(g_selectedGear);
-  delay(1000);
+  delay(2);
 }
 void setGear() { //int 1
-  Serial.println("gearchange");
-  if (!(PINB & (1 << (neutral - 8)))) {          //
+  //Serial.println("gearchange");
+  /*if (!(PINB & (1 << (neutral - 8)))) {          //
     g_selectedGear = 2;           //2 being neutral
     return;
-  }
+  }*/
   bool gearUpState = (PINB & (1 << (gearUp - 8)));
   bool gearDownState = (PINB & (1 << (gearDown - 8)));
   unsigned long currentInterrupt = micros();
   if ((currentInterrupt - g_lastInterrupt2) > 1.5e5) { //debounce 150ms
-    //if ((PINB & (1 << neutral - 8)) && g_selectedGear >6) g_selectedGear = 1;
+    if (!(PINB & (1 << (neutral - 8)))) {          // ef neutral er low
+    g_selectedGear = 2;           //2 being neutral
+    return;
+     }
     if (!gearUpState && g_selectedGear < 6) {
       g_selectedGear++;
+      //Serial.println("gearUp");
     }
     else if (!gearDownState && g_selectedGear > 1) {
       g_selectedGear--;
+      //Serial.println("gearDown");
     }
     sevenSeg(g_selectedGear);
     g_lastInterrupt2 = currentInterrupt;
