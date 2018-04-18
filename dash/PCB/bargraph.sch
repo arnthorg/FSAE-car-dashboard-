@@ -34,6 +34,56 @@ LIBS:Cer_reso
 LIBS:pin_header
 LIBS:arduino
 LIBS:crystal_smd
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:Altera
+LIBS:analog_devices
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
 LIBS:bargraph-cache
 EELAYER 25 0
 EELAYER END
@@ -399,7 +449,7 @@ L R R1
 U 1 1 572C7BE8
 P 4000 700
 F 0 "R1" V 4080 700 50  0000 C CNN
-F 1 "2k2" V 4000 700 50  0000 C CNN
+F 1 "1k" V 4000 700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 700 50  0001 C CNN
 F 3 "" H 4000 700 50  0000 C CNN
 	1    4000 700 
@@ -610,7 +660,7 @@ L C C3
 U 1 1 572FD4EE
 P 4300 900
 F 0 "C3" H 4186 946 50  0000 R CNN
-F 1 "C" H 4186 855 50  0000 R CNN
+F 1 "100n" H 4186 855 50  0000 R CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4338 750 50  0001 C CNN
 F 3 "" H 4300 900 50  0000 C CNN
 	1    4300 900 
@@ -2608,4 +2658,28 @@ F 3 "" H 9400 4000 50  0000 C CNN
 	1    9400 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L SPST SW?
+U 1 1 575C2CF3
+P 3500 4350
+F 0 "SW?" H 3500 4615 50  0000 C CNN
+F 1 "REED" H 3500 4524 50  0000 C CNN
+F 2 "" H 3500 4350 50  0000 C CNN
+F 3 "" H 3500 4350 50  0000 C CNN
+	1    3500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 575C3B39
+P 4000 4350
+F 0 "#PWR?" H 4000 4100 50  0001 C CNN
+F 1 "GNDREF" H 4000 4200 50  0001 C CNN
+F 2 "" H 4000 4350 50  0000 C CNN
+F 3 "" H 4000 4350 50  0000 C CNN
+	1    4000 4350
+	1    0    0    -1  
+$EndComp
+Text Label 3000 4350 2    60   ~ 0
+A1
 $EndSCHEMATC

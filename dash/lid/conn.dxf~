@@ -23,17 +23,17 @@ $INSBASE
   9
 $EXTMIN
  10
-0
+-8.5
  20
-0
+-8.5
  30
 0
   9
 $EXTMAX
  10
-124.5
+7.275000000000002
  20
-62.4
+8.5
  30
 0
   9
@@ -111,7 +111,7 @@ $DISPSILH
   9
 $DIMSCALE
  40
-1
+2.5
   9
 $DIMASZ
  40
@@ -187,7 +187,7 @@ $DIMTAD
   9
 $DIMZIN
  70
-    1
+    8
   9
 $DIMBLK
   1
@@ -311,7 +311,7 @@ $DIMUPT
   9
 $DIMDEC
  70
-    4
+    2
   9
 $DIMTDEC
  70
@@ -327,7 +327,7 @@ $DIMALTTD
   9
 $DIMTXSTY
   7
-standard
+STANDARD
   9
 $DIMAUNIT
  70
@@ -335,7 +335,7 @@ $DIMAUNIT
   9
 $DIMADEC
  70
-    2
+    0
   9
 $DIMALTRND
  40
@@ -347,7 +347,7 @@ $DIMAZIN
   9
 $DIMDSEP
  70
-    0
+   44
   9
 $DIMATFIT
  70
@@ -803,7 +803,7 @@ $PEXTMAX
   9
 $GRIDMODE
  70
-    1
+    0
   9
 $SNAPSTYLE
  70
@@ -879,7 +879,7 @@ $LWDISPLAY
   9
 $INSUNITS
  70
-    0
+    4
   9
 $HYPERLINKBASE
   1
@@ -907,7 +907,7 @@ $EXTNAMES
   9
 $PSVPSCALE
  40
-0
+1
   9
 $OLESTARTUP
 290
@@ -1115,9 +1115,9 @@ AcDbViewportTableRecord
  21
 1
  12
--25.17796021896408
+8.572280234493846
  22
--17.74446720193659
+5.832355150197682
  13
 0
  23
@@ -1143,9 +1143,9 @@ AcDbViewportTableRecord
  37
 0
  40
-15.34656622870192
+23.20123697111605
  41
-2.125
+1.506906077348066
  42
 50
  43
@@ -1167,7 +1167,7 @@ AcDbViewportTableRecord
  75
     0
  76
-    1
+    0
  77
     0
  78
@@ -2413,7 +2413,7 @@ Standard
 141
 0.09
 142
-0
+2.5
 143
 25.4
 144
@@ -2463,9 +2463,9 @@ Standard
 178
     0
 179
-    2
+    0
 271
-    4
+    2
 272
     4
 273
@@ -2649,7 +2649,7 @@ SECTION
   2
 ENTITIES
   0
-LWPOLYLINE
+ARC
   5
 4D
 100
@@ -2663,31 +2663,21 @@ ByLayer
 370
    -1
 100
-AcDbPolyline
- 90
-    4
- 70
-    1
- 43
-0
+AcDbCircle
  10
 0
  20
 0
- 10
-124.5
- 20
-0
- 10
-124.5
- 20
-62.4
- 10
-0
- 20
-62.4
+ 40
+8.5
+100
+AcDbArc
+ 50
+31.14264954274065
+ 51
+328.8573504572594
   0
-CIRCLE
+LINE
   5
 4E
 100
@@ -2701,79 +2691,15 @@ ByLayer
 370
    -1
 100
-AcDbCircle
+AcDbLine
  10
-6.39
+7.275000000000001
  20
-7.89
- 40
-1.5
-  0
-CIRCLE
-  5
-4F
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-6.41
- 20
-55.4
- 40
-1.5
-  0
-CIRCLE
-  5
-50
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-118.1
- 20
-7
- 40
-1.5
-  0
-CIRCLE
-  5
-51
-100
-AcDbEntity
-  8
-0
-  6
-ByLayer
- 62
-  256
-370
-   -1
-100
-AcDbCircle
- 10
-118.1
- 20
-55.4
- 40
-1.5
+-4.395949840478162
+ 11
+7.275000000000001
+ 21
+4.395949840478161
   0
 ENDSEC
   0

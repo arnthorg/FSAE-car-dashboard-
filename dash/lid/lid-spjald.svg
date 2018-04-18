@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:lc="http://www.librecad.org" xmlns:xlink="http://www.w3.org/1999/xlink" width="125mm" height="62.49329109mm" viewBox="0 0 125 62.49329109">
+    <g lc:layername="0" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <line x1="2.6633" y1="62.45059286" x2="122.6635" y2="62.45059286"/>
+        <line x1="0" y1="1.77514286" x2="0" y2="0.17514286"/>
+        <line x1="2.6633" y1="62.45059286" x2="0.01035064" y2="62.46080615"/>
+        <line x1="0.01035064" y1="62.46080615" x2="0" y2="60.77514286"/>
+        <line x1="122.6635" y1="62.45059286" x2="124.99960086" y2="62.49329109"/>
+        <line x1="124.99960086" y1="62.49329109" x2="125" y2="60.77514286"/>
+        <line x1="0" y1="0.17514286" x2="124.99738963" y2="0"/>
+        <line x1="124.99738963" y1="0" x2="125" y2="1.87514286"/>
+        <path d="M31.03751529,9.7660866 L94.29810132,9.7660866 L94.29810132,20.45186232 L31.03751529,20.45186232 L31.03751529,9.7660866 Z "/>
+        <line x1="48.339" y1="21.99364286" x2="72.309" y2="21.99364286"/>
+        <line x1="48.339" y1="21.99364286" x2="72.309" y2="21.99364286"/>
+        <line x1="48.339" y1="21.99364286" x2="72.309" y2="21.99364286"/>
+        <line x1="48.339" y1="21.99364286" x2="72.309" y2="21.99364286"/>
+        <line x1="48.339" y1="21.99364286" x2="72.309" y2="21.99364286"/>
+        <line x1="22.839" y1="24.65714286" x2="46.809" y2="24.65714286"/>
+        <line x1="22.839" y1="24.65714286" x2="21.306" y2="24.65714286"/>
+        <line x1="45.809" y1="24.65714286" x2="48.339" y2="24.65714286"/>
+        <line x1="22.839" y1="39.15714286" x2="21.306" y2="39.15714286"/>
+        <line x1="46.809" y1="39.15714286" x2="48.339" y2="39.15714286"/>
+        <line x1="21.306" y1="39.15714286" x2="21.306" y2="24.65714286"/>
+        <line x1="22.839" y1="39.15714286" x2="48.339" y2="39.15714286"/>
+        <line x1="21.306" y1="24.65714286" x2="48.339" y2="24.65714286"/>
+        <line x1="48.339" y1="24.65714286" x2="48.339" y2="22.00314286"/>
+        <circle cx="52.08618338" cy="6.05015895" r="2.5"/>
+        <circle cx="58.42988036" cy="6.05016341" r="2.5"/>
+        <circle cx="64.78616291" cy="6.05138249" r="2.5"/>
+        <circle cx="71.13616291" cy="6.05138249" r="2.5"/>
+    </g>
+    <g lc:layername="BLACK" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="BLUE1" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="BLUE2" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="BLUE3" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="BLUE4" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="BROWN1" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="BROWN2" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="Black" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
+        <line x1="72.381" y1="21.82714286" x2="72.387" y2="21.82824286"/>
+        <line x1="53.217" y1="21.98684286" x2="53.215" y2="21.99094286"/>
+        <line x1="48.336" y1="21.98414286" x2="48.339" y2="22.00314286"/>
+        <line x1="48.339" y1="55.95714286" x2="72.309" y2="55.95714286"/>
+        <line x1="72.309" y1="55.95714286" x2="72.306" y2="55.93814286"/>
+        <line x1="72.306" y1="55.93814286" x2="72.306" y2="21.98414286"/>
+        <line x1="0" y1="60.77514286" x2="0" y2="1.77514286"/>
+        <line x1="125" y1="60.77514286" x2="125" y2="1.87514286"/>
+        <line x1="48.339" y1="39.15714286" x2="48.339" y2="55.95714286"/>
+    </g>
+    <g lc:layername="CYAN1" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="CYAN2" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="CYAN3" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="CYAN4" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="GRAY1" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="GRAY2" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="GRAY3" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="GREEN1" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="GREEN2" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="GREEN3" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="GREEN4" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="LYELLOW" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="MAGENTA1" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="MAGENTA2" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="MAGENTA3" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="MAGENTA4" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="RED1" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="RED2" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="RED3" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="RED4" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="WHITE" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="YELLOW3" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+    <g lc:layername="YELLOW4" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1"/>
+</svg>
