@@ -3,5 +3,9 @@ desktop.ini
 FS2016
 clt-resistance-chart.gif
 codesnippets.txt
-debug.log
+*.log
+*.pdf
 fluidtempNTC.png
+/rpm
+/DS18b20
+kynning.pptx
