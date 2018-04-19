@@ -1,7 +1,7 @@
 format short
 format compact
  %%
-
+%% This piece of code takes measured Voltage/Temperature curve given a certain load resistor for NTC temperature sensors and interpolates to 8 bit lookup table. 
 %%
 load hitanemar.mat
 vq = interp1(HitanemarV,HitanemarC, 0:5/256:5-5/256);
