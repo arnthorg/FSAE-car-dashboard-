@@ -9,5 +9,9 @@ It has:
 * 7-seg gear selected display
 
 Dash-OLED/ contains the main program
+
 PCB/ contains the PCB design
+
 lid/ contains the sketch for the lid that enclosed the electronics
+
+myndir/ contains some images of the project
