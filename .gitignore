@@ -1,11 +1,22 @@
 
 desktop.ini
-FS2016
+/FS2016
 clt-resistance-chart.gif
 codesnippets.txt
-*.log
-*.pdf
+
 fluidtempNTC.png
 /rpm
 /DS18b20
 kynning.pptx
+*.gz
+*.out
+*.aux
+*.log
+*.pdfwaitforserialandreply/
+watchdog/
+rpm/
+dash/
+
+connector/connector.svg
+
+waitforserialandreply/waitforserialandreply.ino

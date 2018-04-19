@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:lc="http://www.librecad.org" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.775mm" height="17mm" viewBox="0 0 15.775 17">
-    <g lc:layername="0" lc:is_locked="false" lc:is_construction="false" fill="none" stroke="black" stroke-width="1">
-        <path d="M15.775,4.10405016 A8.5,8.5 0 1,0 15.775,12.89594984 "/>
-        <line x1="15.775" y1="12.89594984" x2="15.775" y2="4.10405016"/>
-    </g>
-</svg>
